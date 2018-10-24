@@ -1,0 +1,91 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:local="clr-namespace:bahasaKorea"
+             xmlns:views = "clr-namespace:bahasaKorea.Views"
+             x:Class="bahasaKorea.MainPage"
+             BackgroundColor="White">
+
+    <ContentPage.Padding>
+        <OnPlatform x:TypeArguments="Thickness" iOS="0, 20, 0, 0" />
+    </ContentPage.Padding>
+
+    <ContentPage.Content>
+
+        <Grid RowSpacing="0" ColumnSpacing="0">
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition Width="*"/>
+            </Grid.ColumnDefinitions>
+            <Grid.RowDefinitions>
+                <RowDefinition Height="*" />
+                <RowDefinition Height="1" />
+                <RowDefinition Height="55"/>
+            </Grid.RowDefinitions>
+
+            <ContentView x:Name="ChangeContent" Grid.Column="0" Grid.Row="0"  >
+                <views:KamusView />
+            </ContentView>
+
+            <BoxView x:Name="boxline" Grid.Column="0" Grid.Row="1" HeightRequest="0.1" Color="#33A7D6" />
+
+            <Grid Grid.Column="0" Grid.Row="2" RowSpacing="0" ColumnSpacing="0">
+
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition Width="*" />
+                    <ColumnDefinition Width="*" />
+                    <ColumnDefinition Width="*" />
+                    <ColumnDefinition Width="*" />
+                    <ColumnDefinition Width="*" />
+                </Grid.ColumnDefinitions>
+                <Grid.RowDefinitions>
+                    <RowDefinition />
+                </Grid.RowDefinitions>
+
+                <StackLayout x:Name="sl1"  Orientation="Vertical" VerticalOptions="End" Grid.Column="0" Grid.Row="0" >
+                    <Image x:Name="tabImg1" />
+                    <Label x:Name="tab1" Text="Hangul" TextColor="#5A297D" FontSize="11" HorizontalTextAlignment="Center" />
+                    <StackLayout.GestureRecognizers>
+                        <TapGestureRecognizer Tapped="TapGestureRecognizer_HangulBaseListView_Tapped" />
+                    </StackLayout.GestureRecognizers>
+                </StackLayout>
+
+                <StackLayout x:Name="sl2" Orientation="Vertical" VerticalOptions="End" Grid.Column="1" Grid.Row="0">
+                    <Image x:Name="tabImg2" />
+                    <Label x:Name="tab2" Text="Alfabet" TextColor="#5A297D" FontSize="11" HorizontalTextAlignment="Center" />
+                    <StackLayout.GestureRecognizers>
+                        <TapGestureRecognizer Tapped="TapGestureRecognizer_AlfabetView_Tapped" />
+                    </StackLayout.GestureRecognizers>
+                </StackLayout>
+
+                <StackLayout x:Name="sl3" Orientation="Vertical" VerticalOptions="End" Grid.Column="2" Grid.Row="0">
+                    <Image x:Name="tabImg3"  />
+                    <Label x:Name="tab3" Text="Perkataan" TextColor="#5A297D" FontSize="11" HorizontalTextAlignment="Center" />
+                    <StackLayout.GestureRecognizers>
+                        <TapGestureRecognizer Tapped="TapGestureRecognizer_Perkataan_Tapped" />
+                    </StackLayout.GestureRecognizers>
+                </StackLayout>
+
+                <StackLayout x:Name="sl4" Orientation="Vertical" VerticalOptions="End" Grid.Column="3" Grid.Row="0">
+                    <Image x:Name="tabImg4" />
+                    <Label x:Name="tab4" Text="Kamus" TextColor="#5A297D" FontSize="11" HorizontalTextAlignment="Center" />
+                    <StackLayout.GestureRecognizers>
+                        <TapGestureRecognizer Tapped="TapGestureRecognizer_Kamus_Tapped" />
+                    </StackLayout.GestureRecognizers>
+                </StackLayout>
+
+                <StackLayout x:Name="sl5" Orientation="Vertical" VerticalOptions="End" Grid.Column="4" Grid.Row="0">
+                    <Image x:Name="tabImg5" />
+                    <Label x:Name="tab5" Text="Pengaturan" TextColor="#5A297D" FontSize="11" HorizontalTextAlignment="Center" />
+                    <StackLayout.GestureRecognizers>
+                        <TapGestureRecognizer  Tapped="TapGestureRecognizer_Pengaturan_Tapped" />
+                    </StackLayout.GestureRecognizers>
+                </StackLayout>
+
+            </Grid>
+
+        </Grid>
+
+
+    </ContentPage.Content>
+
+</ContentPage>

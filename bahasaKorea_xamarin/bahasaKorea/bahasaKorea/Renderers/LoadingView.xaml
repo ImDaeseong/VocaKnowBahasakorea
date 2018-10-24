@@ -1,0 +1,12 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<ContentView xmlns="http://xamarin.com/schemas/2014/forms" 
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="bahasaKorea.Renderers.LoadingView"
+             BackgroundColor="#50000000">
+  <ContentView.Content>
+        <StackLayout Spacing="20" VerticalOptions="CenterAndExpand" HorizontalOptions="CenterAndExpand">
+            <Image x:Name="loadingImage" Source = "change.png" />
+            <Label x:Name="loadingText" FontSize = "15"	HorizontalTextAlignment = "Center" HorizontalOptions = "FillAndExpand" />
+        </StackLayout>
+    </ContentView.Content>
+</ContentView>

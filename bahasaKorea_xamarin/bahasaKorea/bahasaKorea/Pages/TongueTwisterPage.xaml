@@ -1,0 +1,67 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:renderers= "clr-namespace:bahasaKorea.Renderers"
+             x:Class="bahasaKorea.Pages.TongueTwisterPage"
+              BackgroundColor="White">
+
+    <ContentPage.Padding>
+        <OnPlatform x:TypeArguments="Thickness" iOS="0, 20, 0, 0" />
+    </ContentPage.Padding>
+
+    <ContentPage.Content>
+
+        <ScrollView Orientation= "Vertical">
+            <Grid>
+                <Grid.RowDefinitions>
+                    <RowDefinition Height="auto"/>
+                    <RowDefinition Height="auto"/>
+                    <RowDefinition Height="*"/>
+                    <RowDefinition Height="auto"/>
+                </Grid.RowDefinitions>
+
+                <Grid Grid.Row="0" Margin="0,0,0,0">
+                    <StackLayout Padding="0">
+                        <renderers:CloseTopButtonView x:Name="EnterClose" Text="Tongue Twister"  BackgroundColor="#33A7D6" Click="EnterClose_Click" />
+                        <BoxView BackgroundColor="Black" HeightRequest="0.5" />
+                    </StackLayout>
+                </Grid>
+
+                <StackLayout Grid.Row="1" VerticalOptions="FillAndExpand" HorizontalOptions="FillAndExpand"  Margin="0,0,0,0" >
+                    <Frame BackgroundColor="White" OutlineColor="White" Padding="2, 0, 2, 2">
+                        <Frame x:Name="FrameView" BackgroundColor="#33A7D6" OutlineColor="White" HasShadow="False" Padding="0,0,5,0">
+                            <StackLayout Spacing="0">
+                                <renderers:MultiLineLabel Lines="10"  x:Name="scrollText" VerticalTextAlignment="Center" HorizontalTextAlignment="Center" TextColor="White" FontSize="20" FontAttributes="Bold" Margin="5,5,5,5" />
+                            </StackLayout>
+                        </Frame>
+                    </Frame>
+                </StackLayout>
+
+                <StackLayout Grid.Row="2" HorizontalOptions="Center" VerticalOptions="Center"  Margin="0,0,0,0">
+                    <renderers:ImageColorEx x:Name="imgColorEx" Source="Microphone.png" >
+                        <renderers:ImageColorEx.GestureRecognizers>
+                            <TapGestureRecognizer Tapped="TapGestureRecognizer_Tapped" />
+                        </renderers:ImageColorEx.GestureRecognizers>
+                    </renderers:ImageColorEx>
+                </StackLayout>
+
+                <StackLayout Grid.Row="3"  HorizontalOptions="FillAndExpand" VerticalOptions="Center"  Margin="5,5,5,5">
+                    <Frame x:Name="framePlay" Padding="11" CornerRadius="3" BackgroundColor="#33A7D6" OutlineColor="White" HasShadow="False">
+                        <StackLayout Orientation="Horizontal">
+                            <renderers:ImageClick x:Name="btnPlay" VerticalOptions="Center" Source="play.png" HorizontalOptions="Start" Click="btnPlay_Click" />
+                            <Label FontSize="Micro" TextColor="White" Text="00:00" VerticalOptions="Center" x:Name="currentTime" />
+                            <renderers:ColorProgressBar x:Name="progress" Progress="0" HorizontalOptions="FillAndExpand" VerticalOptions="Center" />
+                            <Label FontSize="Micro" TextColor="White" Text="00:00" VerticalOptions="Center" x:Name="totalTime" />
+                            <StackLayout.GestureRecognizers>
+                                <TapGestureRecognizer Tapped="btnPlay_Click" />
+                            </StackLayout.GestureRecognizers>
+                        </StackLayout>
+                    </Frame>
+                </StackLayout>
+
+            </Grid>
+        </ScrollView>
+
+    </ContentPage.Content>
+
+</ContentPage>

@@ -1,0 +1,26 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<ContentView xmlns="http://xamarin.com/schemas/2014/forms" 
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="bahasaKorea.Views.HangulBaseListViewCell">
+  <ContentView.Content>
+        <Frame  x:Name="AlfabetHangulViewCell" 
+                HeightRequest="40"
+                WidthRequest="50"       
+ 			    Margin="0,0,0,0"			
+			    Padding="0"
+			    HasShadow="false"
+			    CornerRadius="3"
+			    BackgroundColor="#37474F"
+ 			    HorizontalOptions="FillAndExpand" VerticalOptions="FillAndExpand">
+            <Grid ColumnSpacing="0"	RowSpacing="0">
+                <Label Text="{Binding TextHangul}" TextColor="White" HorizontalOptions="Center" VerticalOptions="Center" />
+                <Label.GestureRecognizers>
+                    <TapGestureRecognizer Tapped="TapGestureRecognizer_Tapped"></TapGestureRecognizer>
+                </Label.GestureRecognizers>
+            </Grid>
+            <Frame.GestureRecognizers>
+                <TapGestureRecognizer Tapped="TapGestureRecognizer_Tapped"></TapGestureRecognizer>
+            </Frame.GestureRecognizers>
+        </Frame>
+    </ContentView.Content>
+</ContentView>

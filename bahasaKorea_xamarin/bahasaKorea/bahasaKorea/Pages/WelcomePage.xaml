@@ -1,0 +1,44 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:renderers= "clr-namespace:bahasaKorea.Renderers"
+             x:Class="bahasaKorea.Pages.WelcomePage"
+             BackgroundColor="White">
+
+    <ContentPage.Padding>
+        <OnPlatform x:TypeArguments="Thickness" iOS="0, 20, 0, 0" />
+    </ContentPage.Padding>
+
+    <ContentPage.Content>
+
+        <ScrollView Orientation= "Vertical">
+
+            <Grid>
+                <Grid.RowDefinitions>
+                    <RowDefinition Height="auto"/>
+                    <RowDefinition Height="auto"/>
+                </Grid.RowDefinitions>
+
+                <Grid Grid.Row="0" Margin="0,0,0,0">
+                    <StackLayout Padding="0">
+                        <renderers:CloseTopButtonView x:Name="EnterClose" Text="Belajar bahasa korea"  BackgroundColor="#33A7D6" Click="EnterClose_Click" />
+                    </StackLayout>
+                </Grid>
+
+                <StackLayout Grid.Row="1" Padding="25" Spacing="10">
+                    <Label Text="Selamat Datang" FontSize="Large" />
+
+                    <Label Text="Tolong Belajar bahasa korea dengan aplikasi ini. Anda pasti bisa berbicara bahasa korea. selamat menikmati bahasa korea. terima kasih semua." FontSize="Medium" />
+
+                    <StackLayout x:Name="AdName" VerticalOptions="End">
+                        <renderers:AdMobBannerView VerticalOptions="End" />
+                    </StackLayout>
+
+                </StackLayout>
+            </Grid>
+
+        </ScrollView>
+
+    </ContentPage.Content>
+
+</ContentPage>
