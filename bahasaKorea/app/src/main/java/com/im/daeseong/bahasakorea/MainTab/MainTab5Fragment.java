@@ -2,13 +2,12 @@ package com.im.daeseong.bahasakorea.MainTab;
 
 import android.content.Context;
 import android.os.Bundle;
-import android.support.annotation.Nullable;
-import android.support.v4.app.Fragment;
+import androidx.annotation.Nullable;//import android.support.annotation.Nullable;
+import androidx.fragment.app.Fragment;//import android.support.v4.app.Fragment;
 import android.view.LayoutInflater;
 import android.view.MotionEvent;
 import android.view.View;
 import android.view.ViewGroup;
-
 import com.im.daeseong.bahasakorea.BahasaApplication;
 import com.im.daeseong.bahasakorea.MainActivity;
 import com.im.daeseong.bahasakorea.R;

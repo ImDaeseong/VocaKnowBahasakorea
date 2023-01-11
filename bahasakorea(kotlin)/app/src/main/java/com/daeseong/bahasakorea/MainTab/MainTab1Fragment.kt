@@ -22,7 +22,6 @@ import com.daeseong.bahasakorea.R
 import com.google.android.material.floatingactionbutton.FloatingActionButton
 import java.util.*
 
-
 class MainTab1Fragment : Fragment() {
 
     companion object {

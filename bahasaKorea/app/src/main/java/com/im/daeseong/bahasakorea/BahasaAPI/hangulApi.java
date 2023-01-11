@@ -1,7 +1,6 @@
 package com.im.daeseong.bahasakorea.BahasaAPI;
 
 import com.im.daeseong.bahasakorea.Common.HangulItem;
-
 import java.util.HashMap;
 
 public class hangulApi {

@@ -2,19 +2,17 @@ package com.im.daeseong.bahasakorea;
 
 import android.content.pm.ActivityInfo;
 import android.os.Build;
-import android.support.v7.app.AppCompatActivity;
+import androidx.appcompat.app.AppCompatActivity;//import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.text.Editable;
 import android.text.TextUtils;
 import android.text.TextWatcher;
-import android.util.Log;
 import android.view.View;
 import android.view.Window;
 import android.view.WindowManager;
 import android.widget.CompoundButton;
 import android.widget.EditText;
 import android.widget.Switch;
-
 import com.im.daeseong.bahasakorea.Controls.OnSingleClickListener;
 import com.im.daeseong.bahasakorea.Controls.RecycleUtil;
 import com.im.daeseong.bahasakorea.Controls.SharedPreferencesUtil;

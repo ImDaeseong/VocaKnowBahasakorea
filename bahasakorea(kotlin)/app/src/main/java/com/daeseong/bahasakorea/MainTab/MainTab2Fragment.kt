@@ -5,7 +5,6 @@ import android.graphics.Color
 import android.graphics.Point
 import android.os.Bundle
 import android.os.Handler
-import android.util.Log
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
@@ -27,7 +26,6 @@ import com.daeseong.bahasakorea.Database.KataManager
 import com.daeseong.bahasakorea.MainActivity
 import com.daeseong.bahasakorea.R
 import java.util.*
-
 
 class MainTab2Fragment : Fragment() {
 

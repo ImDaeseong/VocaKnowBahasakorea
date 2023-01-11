@@ -9,7 +9,6 @@ import androidx.annotation.Nullable
 import androidx.constraintlayout.widget.ConstraintLayout
 import kotlin.math.abs
 
-
 class SwipeConstraintLayout : ConstraintLayout {
 
     private val tag: String = SwipeConstraintLayout::class.java.simpleName

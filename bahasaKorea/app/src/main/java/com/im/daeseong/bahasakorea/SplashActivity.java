@@ -6,19 +6,14 @@ import android.content.pm.ActivityInfo;
 import android.os.AsyncTask;
 import android.os.Handler;
 import android.os.Message;
-import android.support.v7.app.AppCompatActivity;
+import androidx.appcompat.app.AppCompatActivity;//import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
-import android.util.Log;
 import android.view.View;
 import android.view.Window;
 import android.view.WindowManager;
-
-import com.im.daeseong.bahasakorea.BahasaAPI.hangulApi;
-import com.im.daeseong.bahasakorea.BahasaAPI.kataApi;
 import com.im.daeseong.bahasakorea.Controls.RecycleUtil;
 import com.im.daeseong.bahasakorea.Controls.SharedPreferencesUtil;
 import com.im.daeseong.bahasakorea.Database.CopyDBfile;
-import com.im.daeseong.bahasakorea.Database.KataManager;
 
 public class SplashActivity extends AppCompatActivity {
 

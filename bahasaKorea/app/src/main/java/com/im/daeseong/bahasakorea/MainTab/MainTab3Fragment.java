@@ -5,9 +5,8 @@ import android.graphics.Color;
 import android.graphics.Point;
 import android.os.Bundle;
 import android.os.Handler;
-import android.support.annotation.Nullable;
-import android.support.v4.app.Fragment;
-import android.util.Log;
+import androidx.annotation.Nullable;//import android.support.annotation.Nullable;
+import androidx.fragment.app.Fragment;//import android.support.v4.app.Fragment;
 import android.view.Display;
 import android.view.LayoutInflater;
 import android.view.MotionEvent;
@@ -15,8 +14,6 @@ import android.view.View;
 import android.view.ViewGroup;
 import android.widget.ImageView;
 import android.widget.TextView;
-
-import com.im.daeseong.bahasakorea.BahasaAPI.kataApi;
 import com.im.daeseong.bahasakorea.BahasaApplication;
 import com.im.daeseong.bahasakorea.Controls.AnimatorUtil;
 import com.im.daeseong.bahasakorea.Controls.MarqueeTask;
@@ -28,7 +25,6 @@ import com.im.daeseong.bahasakorea.Database.KataItems;
 import com.im.daeseong.bahasakorea.Database.KataManager;
 import com.im.daeseong.bahasakorea.MainActivity;
 import com.im.daeseong.bahasakorea.R;
-
 import java.util.Timer;
 import java.util.TimerTask;
 

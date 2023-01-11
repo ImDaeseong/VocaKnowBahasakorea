@@ -6,7 +6,6 @@ import android.os.Handler
 import android.text.Editable
 import android.text.TextUtils
 import android.text.TextWatcher
-import android.util.Log
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
@@ -20,7 +19,6 @@ import com.daeseong.bahasakorea.Database.KataItems
 import com.daeseong.bahasakorea.Database.KataManager
 import com.daeseong.bahasakorea.MainActivity
 import com.daeseong.bahasakorea.R
-
 
 class MainTab4Fragment : Fragment() {
 

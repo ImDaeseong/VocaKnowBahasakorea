@@ -9,17 +9,13 @@ import com.daeseong.bahasakorea.R
 class FloatingTextView(viewGroup: ViewGroup) {
 
     private val floatingview: View = LayoutInflater.from(viewGroup.context).inflate(R.layout.floating_layout, viewGroup,false)
-    private val cLClose: View
-    private val tv1: TextView
-    private val tv2: TextView
+    private val cLClose: View = floatingview.findViewById<View>(R.id.cLClose)
+    private var tv1: TextView = floatingview.findViewById<TextView>(R.id.tv1)
+    private val tv2: TextView = floatingview.findViewById<TextView>(R.id.tv2)
 
     init {
 
-        tv1 = floatingview.findViewById<TextView>(R.id.tv1)
-        tv2 = floatingview.findViewById<TextView>(R.id.tv2)
-        cLClose = floatingview.findViewById<View>(R.id.cLClose)
         cLClose.setOnClickListener {
-
             floatingview.visibility = View.GONE
         }
     }

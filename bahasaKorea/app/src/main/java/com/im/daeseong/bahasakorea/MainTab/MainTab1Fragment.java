@@ -4,11 +4,10 @@ import android.content.Context;
 import android.graphics.Point;
 import android.os.Bundle;
 import android.os.Handler;
-import android.support.annotation.Nullable;
-import android.support.design.widget.FloatingActionButton;
-import android.support.v4.app.Fragment;
+import androidx.annotation.Nullable;//import android.support.annotation.Nullable;
+import com.google.android.material.floatingactionbutton.FloatingActionButton;//import android.support.design.widget.FloatingActionButton;
+import androidx.fragment.app.Fragment;//import android.support.v4.app.Fragment;
 import android.text.TextUtils;
-import android.util.Log;
 import android.view.Display;
 import android.view.LayoutInflater;
 import android.view.View;
@@ -16,14 +15,12 @@ import android.view.ViewTreeObserver;
 import android.view.ViewGroup;
 import android.widget.GridLayout;
 import android.widget.ScrollView;
-
 import com.im.daeseong.bahasakorea.BahasaApplication;
 import com.im.daeseong.bahasakorea.Common.AlfabetItem;
 import com.im.daeseong.bahasakorea.Controls.AnimatorUtil;
 import com.im.daeseong.bahasakorea.Controls.OnSingleClickListener;
 import com.im.daeseong.bahasakorea.R;
 import com.im.daeseong.bahasakorea.Controls.TextToSpeechUtil;
-
 import java.util.Timer;
 import java.util.TimerTask;
 

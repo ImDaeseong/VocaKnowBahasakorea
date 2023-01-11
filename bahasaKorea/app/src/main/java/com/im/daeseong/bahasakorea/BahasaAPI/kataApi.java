@@ -1,7 +1,6 @@
 package com.im.daeseong.bahasakorea.BahasaAPI;
 
 import com.im.daeseong.bahasakorea.Database.KataItems;
-
 import java.util.HashMap;
 import java.util.List;
 

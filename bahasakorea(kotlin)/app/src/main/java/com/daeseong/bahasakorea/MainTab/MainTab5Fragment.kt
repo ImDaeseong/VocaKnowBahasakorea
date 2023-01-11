@@ -2,7 +2,6 @@ package com.daeseong.bahasakorea.MainTab
 
 import android.content.Context
 import android.os.Bundle
-import android.util.Log
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
@@ -10,7 +9,6 @@ import androidx.fragment.app.Fragment
 import com.daeseong.bahasakorea.BahasaApplication
 import com.daeseong.bahasakorea.MainActivity
 import com.daeseong.bahasakorea.R
-
 
 class MainTab5Fragment : Fragment() {
 

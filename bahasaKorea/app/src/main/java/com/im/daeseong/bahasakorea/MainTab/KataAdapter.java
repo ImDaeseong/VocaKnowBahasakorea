@@ -6,7 +6,6 @@ import android.view.View;
 import android.view.ViewGroup;
 import android.widget.ArrayAdapter;
 import android.widget.TextView;
-
 import com.im.daeseong.bahasakorea.Database.KataItems;
 import com.im.daeseong.bahasakorea.R;
 import java.util.List;

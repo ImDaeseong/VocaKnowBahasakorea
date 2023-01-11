@@ -24,7 +24,6 @@ import com.daeseong.bahasakorea.MainTab.*
 import com.google.android.material.tabs.TabLayout
 import com.google.android.material.tabs.TabLayout.OnTabSelectedListener
 
-
 class MainActivity : AppCompatActivity() {
 
     private val tag = MainActivity::class.java.simpleName

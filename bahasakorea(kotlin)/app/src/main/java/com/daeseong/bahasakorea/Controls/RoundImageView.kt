@@ -5,7 +5,6 @@ import android.graphics.*
 import android.util.AttributeSet
 import androidx.appcompat.widget.AppCompatImageView
 
-
 open class RoundImageView : AppCompatImageView {
 
     constructor(context: Context, attrs: AttributeSet?) : super(context, attrs) {

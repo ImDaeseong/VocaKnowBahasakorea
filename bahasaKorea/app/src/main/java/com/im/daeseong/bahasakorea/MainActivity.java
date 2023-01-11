@@ -4,9 +4,9 @@ import android.content.Intent;
 import android.content.pm.ActivityInfo;
 import android.graphics.Point;
 import android.os.Build;
-import android.support.constraint.ConstraintLayout;
-import android.support.design.widget.TabLayout;
-import android.support.v7.app.AppCompatActivity;
+import androidx.constraintlayout.widget.ConstraintLayout;//import android.support.constraint.ConstraintLayout;
+import com.google.android.material.tabs.TabLayout;//import android.support.design.widget.TabLayout;
+import androidx.appcompat.app.AppCompatActivity;//import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.util.Log;
 import android.view.Display;
@@ -15,7 +15,6 @@ import android.view.ViewGroup;
 import android.view.Window;
 import android.view.WindowManager;
 import android.view.inputmethod.InputMethodManager;
-
 import com.im.daeseong.bahasakorea.Controls.FloatingTextView;
 import com.im.daeseong.bahasakorea.Controls.OnSingleClickListener;
 import com.im.daeseong.bahasakorea.Controls.ScreenLockutil;
@@ -63,8 +62,6 @@ public class MainActivity extends AppCompatActivity {
         setContentView(R.layout.activity_main);
 
         init();
-
-        //slideMenu_init();
 
         //InitSkinStyle();
 
@@ -176,17 +173,9 @@ public class MainActivity extends AppCompatActivity {
                     setInitFragment(nCurrentIndex);
                     switch (nCurrentIndex) {
                         case 0:
-                            setSwipeEnabled(true);
-                            break;
                         case 1:
-                            setSwipeEnabled(true);
-                            break;
                         case 2:
-                            setSwipeEnabled(true);
-                            break;
                         case 3:
-                            setSwipeEnabled(true);
-                            break;
                         case 4:
                             setSwipeEnabled(true);
                             break;
@@ -199,13 +188,15 @@ public class MainActivity extends AppCompatActivity {
             @Override
             public void onTabUnselected(TabLayout.Tab tab) {
 
+                //Log.e(TAG, "tab 미선택:" + tab.position)
+
                 try {
 
                     nCurrentIndex = tab.getPosition();
-                    Main_viewPager.setCurrentItem(nCurrentIndex);
                     selectFragment(nCurrentIndex, false);
 
                 }catch (Exception e){
+                    Log.e(TAG, e.getMessage().toString());
                 }
 
             }
@@ -213,13 +204,15 @@ public class MainActivity extends AppCompatActivity {
             @Override
             public void onTabReselected(TabLayout.Tab tab) {
 
+                //Log.e(TAG, "tab 선택 상태에서 다시 선택:" + tab.position)
+
                 try {
 
                     nCurrentIndex = tab.getPosition();
-                    Main_viewPager.setCurrentItem(nCurrentIndex);
                     selectFragment(nCurrentIndex, true);
 
                 }catch (Exception e){
+                    Log.e(TAG, e.getMessage().toString());
                 }
 
             }
